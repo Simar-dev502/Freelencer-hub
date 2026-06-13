@@ -18,12 +18,15 @@ const userSchema = new mongoose.Schema(
       required: true
     },
 
-    role: {
-      type: String,
-      enum: ["client", "freelancer"],
-      default: "freelancer"
-    },
-
+    role:{
+  type:String,
+  enum:[
+    "admin",
+    "client",
+    "freelancer"
+  ],
+  default:"freelancer"
+},
     bio: {
       type: String,
       default: ""
@@ -38,7 +41,42 @@ const userSchema = new mongoose.Schema(
     profileImage: {
       type: String,
       default: ""
-    }
+    },
+
+    averageRating:{
+    type:Number,
+    default:0
+},
+
+resume:{
+type:String,
+default:""
+},
+savedJobs:[
+{
+type:mongoose.Schema.Types.ObjectId,
+ref:"Job"
+}
+],
+
+favoriteFreelancers:[
+{
+type:mongoose.Schema.Types.ObjectId,
+ref:"User"
+}
+],
+
+portfolio:[
+{
+title:String,
+image:String,
+description:String
+}
+],
+totalReviews:{
+    type:Number,
+    default:0
+}
   },
   {
     timestamps: true

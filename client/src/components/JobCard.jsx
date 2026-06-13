@@ -39,6 +39,21 @@ rounded-lg
 Apply Now
 </button>
 
+<button
+className="
+mt-2
+bg-yellow-500
+text-white
+px-4
+py-2
+rounded-lg
+"
+onClick={()=>
+saveJob(job._id)
+}
+>
+⭐ Save Job
+</button>
       </div>
 
     </div>

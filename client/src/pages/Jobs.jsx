@@ -25,5 +25,26 @@ function Jobs() {
     </div>
   );
 }
+const saveJob =
+async(jobId)=>{
+
+await axios.post(
+"/api/saved-jobs",
+{
+jobId
+},
+{
+headers:{
+Authorization:
+`Bearer ${token}`
+}
+}
+);
+
+toast.success(
+"Job Saved"
+);
+
+};
 
 export default Jobs;

@@ -253,3 +253,11 @@ module.exports = {
 
     deleteJob
 };
+const recommendedJobs =
+await Job.find({
+
+category:
+user.skills[0]
+
+})
+.limit(6);
