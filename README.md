@@ -1,54 +1,79 @@
-# FreelanceHub Pro 🚀
+# 🚀 FreelanceHub Pro
 
-A modern full-stack freelance marketplace platform inspired by Upwork and Fiverr. FreelanceHub Pro connects clients with talented freelancers through a secure, scalable, and user-friendly web application.
+A full-stack freelance marketplace platform inspired by Upwork and Fiverr, built with the MERN Stack. FreelanceHub Pro enables clients to hire skilled freelancers, manage projects, communicate in real-time, handle payments securely, and showcase professional portfolios through a modern and responsive web application.
 
-## 🌟 Features
+## 🌟 Key Features
 
-### Authentication & Security
+### 🔐 Authentication & Security
 
 * JWT Authentication
 * bcrypt Password Hashing
 * Protected Routes
-* Role-Based Access Control
-* Secure Login & Registration
+* Role-Based Access Control (Admin, Client, Freelancer)
 
-### Freelancer Features
+### 👨‍💻 Freelancer Features
 
-* Create Professional Profile
-* Add Skills & Portfolio
-* Browse Available Jobs
-* Search & Filter Jobs
-* Apply to Projects
-* Track Application Status
-* Dashboard Analytics
+* Professional Profile Management
+* Portfolio & Resume Upload
+* Profile Picture Upload
+* Apply for Jobs
+* Saved Jobs
+* Favorite Clients
+* Real-Time Messaging
+* Ratings & Reviews
+* Earnings Dashboard
 
-### Client Features
+### 🏢 Client Features
 
-* Post New Jobs
-* Manage Posted Jobs
-* View Applicants
-* Accept/Reject Applications
-* Track Hiring Progress
-* Client Dashboard
+* Post, Edit & Delete Jobs
+* Search & Filter Applicants
+* Hire Freelancers
+* Contract Management
+* Payment Processing
+* Real-Time Chat
+* Application Tracking
 
-### Marketplace Features
+### ⭐ Marketplace Features
 
-* Job Search
+* Advanced Job Search
 * Category Filtering
-* Pagination
-* Responsive Design
-* Modern UI Components
-
-### Reviews & Ratings (Upcoming)
-
-* Freelancer Ratings
-* Client Reviews
-* Top Rated Badge
+* Personalized Recommendations
+* Saved Jobs Wishlist
+* Recently Viewed Jobs
 * Featured Freelancers
+* Top Rated Freelancer Badge
 
----
+### 💬 Communication
 
-## 🛠️ Tech Stack
+* Real-Time Chat with Socket.IO
+* Notifications System
+* Conversation History
+* Online User Status
+
+### 💳 Payments & Contracts
+
+* Razorpay Integration
+* Contract Management
+* Payment History
+* Earnings Tracking
+* Hiring Workflow
+
+### ☁️ Cloud Storage
+
+* Cloudinary Integration
+* Resume Upload
+* Portfolio Showcase
+* Project Gallery
+
+### 🛠️ Admin Panel
+
+* User Management
+* User Verification
+* Reports System
+* Platform Analytics
+* Revenue Tracking
+
+## 🛠 Tech Stack
 
 ### Frontend
 
@@ -56,76 +81,68 @@ A modern full-stack freelance marketplace platform inspired by Upwork and Fiverr
 * Tailwind CSS
 * React Router DOM
 * Axios
-* React Toastify
+* React Icons
+* Socket.IO Client
 
 ### Backend
 
 * Node.js
 * Express.js
-* JWT Authentication
+* MongoDB
+* Mongoose
+* JWT
 * bcryptjs
-
-### Database
-
-* MongoDB Atlas
-* Mongoose ODM
+* Socket.IO
+* Multer
+* Cloudinary
+* Razorpay
 
 ### Deployment
 
-* Vercel (Frontend)
-* Render (Backend)
-* MongoDB Atlas (Database)
-
----
+* Vercel
+* Render
+* MongoDB Atlas
+* Cloudinary
 
 ## 📂 Project Structure
 
 ```plaintext
 FreelanceHub-Pro
 │
-├── client
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── layouts
-│   │   ├── context
-│   │   ├── services
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── services/
 │   │   └── App.jsx
-│   │
-│   └── package.json
 │
-├── server
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   ├── utils
-│   ├── uploads
-│   ├── .env
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
 │   └── server.js
 │
 └── README.md
 ```
-
----
 
 ## 🚀 Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/freelancehub-pro.git
-cd freelancehub-pro
+git clone https://github.com/Simar-dev502/FreelanceHub-Pro.git
+cd FreelanceHub-Pro
 ```
 
 ### Backend Setup
 
 ```bash
 cd server
-
 npm install
-
 npm run dev
 ```
 
@@ -133,17 +150,13 @@ npm run dev
 
 ```bash
 cd client
-
 npm install
-
 npm run dev
 ```
 
----
-
 ## 🔑 Environment Variables
 
-Create a `.env` file inside the server folder:
+Create `.env` file inside server folder:
 
 ```env
 PORT=5000
@@ -155,56 +168,31 @@ JWT_SECRET=YOUR_SECRET_KEY
 CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
-```
 
----
+RAZORPAY_KEY_ID=
+RAZORPAY_SECRET=
 
-## 📸 Screenshots
-
-Add screenshots of:
-
-* Home Page
-* Login Page
-* Freelancer Dashboard
-* Client Dashboard
-* Job Listings
-* Application Management
-
----
 
 ## 🎯 Future Enhancements
 
-* Real-Time Chat System
-* Notifications
-* Video Meetings
-* AI-Powered Job Matching
-* Payment Gateway Integration
-* Admin Dashboard
-* Freelancer Verification System
-* Review & Rating System
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome. Feel free to fork this repository and submit pull requests.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
+* AI Job Matching
+* AI Proposal Generator
+* Video Calling
+* Team Collaboration
+* Organization Accounts
+* Multi-Language Support
+* Progressive Web App (PWA)
 
 ## 👨‍💻 Developer
 
-Simarjeet Kaur
+**Simarjeet Kaur**
 
 Computer Science Engineering Student | Full Stack Developer | AI Enthusiast
 
-LinkedIn: https://www.linkedin.com/in/simarjeet-kaur-734b3729b/
-
 GitHub: https://github.com/Simar-dev502
 
-⭐ If you found this project helpful, don't forget to star the repository.
+LinkedIn: https://www.linkedin.com/in/simarjeet-kaur-734b3729b/
+
+---
+
+⭐ If you found this project useful, please consider giving it a star!
